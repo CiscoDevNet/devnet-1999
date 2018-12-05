@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-deployment
+  labels:
+    app: myapp2
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: myapp2
+  template:
+    metadata:
+      labels:
+        app: myapp2
+    spec:
+      containers:
+      - name: myapp2
+        image: trxuk/latam-live-18-simple-server2:latest
+        ports:
+        - containerPort: 5000
