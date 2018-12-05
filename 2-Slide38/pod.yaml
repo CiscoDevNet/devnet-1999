@@ -1,8 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: myapp
+  labels:
+    app: myapp-new
+  name: myapp-new
 spec:
   containers:
-  - name: myapp
+  - name: myapp-new
     image: trxuk/latam-live-18-simple-server1:latest

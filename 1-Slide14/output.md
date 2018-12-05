@@ -71,4 +71,5 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 4994ad4caf92        11dc49a2816d        "/app/myApp.py"     6 seconds ago       Up 4 seconds                            silly_aryabhata
 ```
 
+Try accessing on `http://localhost:5000`
 

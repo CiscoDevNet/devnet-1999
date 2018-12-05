@@ -102,6 +102,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: myapp
+  labels:
+     app: myapp
 spec:
   containers:
   - name: myapp
@@ -196,7 +198,7 @@ Hello Cisco LIVE! Cancun!
 ```
 
 
-Kubernetes will restart the pod if it dies. Upto a point! 
+Kubernetes will restart the pod if it dies. Upto a point!
 
 ```
 MATJOHN2-M-J0PL:2-Slide38 matjohn2$ kubectl get po
@@ -270,4 +272,3 @@ myapp                             1/1       Running   2          51m
 MATJOHN2-M-J0PL:3-Slide43 matjohn2$ kubectl edit service myapp-service
 service "myapp-service" edited
 ```
-
