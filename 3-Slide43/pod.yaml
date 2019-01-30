@@ -5,4 +5,4 @@ metadata:
 spec:
   containers:
   - name: myapp
-    image: trxuk/latam-live-18-simple-server1:latest
+    image: trxuk/cleur-live-19-simple-server1:latest

@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: myapp2
-        image: trxuk/latam-live-18-simple-server2:latest
+        image: trxuk/cleur-live-19-simple-server2:latest
         ports:
         - containerPort: 5000

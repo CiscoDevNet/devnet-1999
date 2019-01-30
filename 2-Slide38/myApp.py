@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello Cisco LIVE! Cancun!"
+    return "Hello Cisco LIVE! Europe 2019!"
 
 def shutdown_server():
     func = request.environ.get('werkzeug.server.shutdown')

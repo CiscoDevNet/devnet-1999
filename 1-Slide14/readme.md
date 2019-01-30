@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello Cisco LIVE! Cancun!"
+    return "Hello Cisco LIVE Europe 2019!"
 
 
 
@@ -72,4 +72,3 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 ```
 
 Try accessing on `http://localhost:5000`
-
