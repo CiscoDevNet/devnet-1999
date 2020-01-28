@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  namespace: newnamespace
+  name: myapp-service2
+spec:
+  type: NodePort
+  selector:
+    app: myapp2
+  ports:
+  - protocol: TCP
+    port: 5000

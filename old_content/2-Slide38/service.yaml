@@ -1,11 +1,11 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: myapp2-service
+  name: myapp-service
 spec:
   type: NodePort
   selector:
-    app: myapp2
+    app: myapp
   ports:
   - protocol: TCP
     port: 5000

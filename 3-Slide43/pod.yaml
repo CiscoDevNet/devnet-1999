@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: Pod
-metadata:
-  name: myapp
-spec:
-  containers:
-  - name: myapp
-    image: trxuk/cleur-live-19-simple-server1:latest
