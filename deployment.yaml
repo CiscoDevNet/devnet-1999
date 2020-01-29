@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: metahertz/devnet-1999-test:latest
+        image: metahertz/devnet-1999:latest
         ports:
         - containerPort: 5000
         env:
