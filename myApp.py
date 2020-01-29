@@ -12,19 +12,7 @@ def hello():
 
 @app.route("/hostname", methods=['GET'])
 def hostname():
-    return "Hostname is {}.".format(os.environ['HOSTNAME'])
-
-@app.route("/info", methods=['GET'])
-def info():
-    if "POD_NAME" in os.environ:
-        info = []
-        info.append("Hostname: {} \n".format(os.environ['HOSTNAME']))
-        info.append("Pod Name: {} \n".format(os.environ['POD_NAME']))
-        info.append("Pod IP: {} \n".format(os.environ['POD_IP']))
-        info.append("Pod Namespace: {} \n".format(os.environ['POD_NAMESPACE']))
-        info.append("Worker Node Name: {} \n".format(os.environ['NODE_NAME']))
-        return str(info)
-    else:
+  
         return "Not running on Kubernetes POD"
 
 @app.route("/environment", methods=['GET'])
