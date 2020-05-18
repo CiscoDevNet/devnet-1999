@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
   - name: myapp
-    image: metahertz/devnet-1999:latest
+    image: metahertz/devnet-day:v1
     env:
     - name: NODE_NAME
       valueFrom:

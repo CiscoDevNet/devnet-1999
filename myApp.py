@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello from Cisco LIVE! Barcelona git session"
+    return "Hello DEVNET Day attendees!"
 
 @app.route("/hostname", methods=['GET'])
 def hostname():
